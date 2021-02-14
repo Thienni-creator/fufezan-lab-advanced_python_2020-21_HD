@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>protein_class module &#8212; classes 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to protein_class’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-classes.protein_class">
+<span id="protein-class-module"></span><span id="classes-rst"></span><h1>protein_class module<a class="headerlink" href="#module-classes.protein_class" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="classes.protein_class.Protein">
+<em class="property">class </em><code class="sig-prename descclassname">classes.protein_class.</code><code class="sig-name descname">Protein</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">protein_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#classes.protein_class.Protein" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="classes.protein_class.Protein.get_data">
+<code class="sig-name descname">get_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#classes.protein_class.Protein.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>downloads the fasta-file and extracts the 1-letter code of the amino acids
+for the protein object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>String containing the 1-letter code of each amino acid contained in the protein</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="classes.protein_class.Protein.map">
+<code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">lookup</span><span class="p">:</span> <span class="n">dict</span></em>, <em class="sig-param"><span class="n">aa_property</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">window_len</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#classes.protein_class.Protein.map" title="Permalink to this definition">¶</a></dt>
+<dd><p>matches each amino acid in the sequence with its property and
+substitutes the values before averaging them for a sliding window</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lookup</strong> – Dictionary containing</p></li>
+<li><p><strong>aa_property</strong> – The property the protein has to be analyzed</p></li>
+<li><p><strong>window_len</strong> – Number of amino acids which the property will be averaged over</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List containing the property for the amino acids after having been averaged
+for the given sliding window</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">classes</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">protein_class module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to protein_class’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Thien Bui.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/classes.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
